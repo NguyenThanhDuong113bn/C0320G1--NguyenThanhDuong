@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f55fc4f-6515-4e6a-abe5-22349e0d6672" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tao_cv.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tao_danh_sach_nuoc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Baitaptaoformdongian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cccc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/the_lienket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,12 +35,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0420G1_Nguyenthanhduong_module1\HTML" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -49,7 +59,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588577991560</updated>
-      <workItem from="1588577992867" duration="2921000" />
+      <workItem from="1588577992867" duration="5413000" />
+      <workItem from="1588595983388" duration="717000" />
+      <workItem from="1588641670667" duration="92000" />
+      <workItem from="1588641775765" duration="7895000" />
     </task>
     <servers />
   </component>
