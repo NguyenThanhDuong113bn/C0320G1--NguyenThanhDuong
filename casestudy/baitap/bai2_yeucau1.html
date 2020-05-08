@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Bảng giá</h2>
+<ul>
+    <li>-	Villa 500$/ 1 ngày</li>
+    <li>-	House 300$/1 ngày</li>
+    <li>-	Room: 100$/1 ngày</li>
+
+</ul>
+<script>
+    let ten=  prompt('Username');
+    let soCmnd= prompt('Identity card number')
+    let ngay =prompt('Day')
+    let diacChi=prompt('Address')
+    let loai=prompt('Species Customer')
+    let gia=prompt('Sale')
+    let soLuong=prompt('quantity included')
+    let soNgayThue=prompt('recent')
+    let loaiDichVu=prompt("type of service")
+    let loaiPhongThue=prompt('room type rented ')
+    let giaDichVu=0;
+    let tongTien=0;
+
+
+    if (loaiDichVu=='Villa'){
+        giaDichVu=500;
+        if (diaChi=='Đà Nẵng');
+        tongTien=(giaDichVu-20)*soNgayThue*(1-(giamGia/100));
+        if (diaChi=='Huế');
+        tongTien=(giaDichVu-10)*soNgayThue*(1-(giamGia/100));
+        if (diaChi=='Quảng Nam');
+        tongTien=(giaDichVu-5)*soNgayThue*(1-(giamGia/100));
+    }
+
+    else if (loaiDichVu=='House'){
+        giaDichVu=300;
+        if (diacChi== "Danang");
+        tongTien=(giaDichVu-20)*soNgayThue*(1-(giamGia/100));
+        if (diaChi=='HaNoi');
+        tongTien=(giaDichVu-10)*soNgayThue*(1-(giamGia/100));
+        if (diaChi=='Quảng Nam');
+        tongTien=(giaDichVu-5)*soNgayThue*(1-(giamGia/100));
+    }else if (loaiDichVu=='Room'){
+        giaDichVu=100;
+        if (diaChi=='Đà Nẵng');
+        tongTien=(giaDichVu-20)*soNgayThue*(1-(giamGia/100) );
+        if (diaChi=='HaNoi');
+        tongTien=(giaDichVu-10)*soNgayThue*(1-giamGia/100);
+        if (diaChi=='Quảng Nam');
+        tongTien=(giaDichVu-5)*soNgayThue*(1-giamGia/100);
+    }
+
+
+    alert('Ho ten:' +ten+
+        '\n Số cmnd:'+soCmnd+
+        '\n Ngày :'+ngay+
+        '\n Địa chỉ:'+diacChi+
+        '\n loai:'+loai+
+        '\n gia:'+gia+
+        '\n soluong:'+soLuong+
+        '\n Số ngày thuê:'+soNgayThue+
+        '\n Loại dịch vụ:'+loaiDichVu+
+        '\n Loại phòng thuê:'+loaiPhongThue)
+
+
+</script>
+</body>
+</html>
