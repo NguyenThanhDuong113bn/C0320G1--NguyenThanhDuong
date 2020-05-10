@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+    Chiều cao <br>
+        <input type="number" id="Ketqua"> <br>
+    <br>
+    Cân nặng <br>
+        <input type="number" id="Ketqua"> <br>
+    <br>
+        <input type="number" id="Chỉ số IBM">
+
+    <input type="button" value="Chỉ số IBM" onclick="Ketqua ()";> </input>
+    <p id = "Ketqua"></p>
+</form>
+    <script>
+        function ketqua() {
+            let Ketqua;
+            let Số IBM = parseInt(document.getElementById('Ketqua').value);
+            let Cao = document.getElementById("Chiều cao").value);
+            let Nặng= document.getElementById("Cân nặng").vailue);
+
+            let Chiềucao,cânnặng=  parseInt(prompt('Nhập chiều cao, cân nặng:'));
+            let  IBM= (cânnặng / (Chiềucao*Chiềucao));
+            document.getElementById("kq").innerHTML=(+ketqua);
+            alert("Chỉ số IBM:"+IBM);
+
+        if (chiSoBMI < 18) {
+            ketQua = ("Bạn là người gầy!");
+        } else if (chiSoBMI <= 24.9) {
+            ketQua = ("Bạn là người bình thường");
+        } else if (chiSoBMI <= 29.9) {
+            ketQua = ("Bạn bị béo phì độ I");
+        } else if (chiSoBMI <= 34.9) {
+            ketQua = ("Bạn bị béo phì độ II");
+        } else {
+            ketQua = ("Bạn bị béo phì độ III");
+        }
+
+       alert("Result:" + ketqua);
+        }
+
+
+    </script>
+
+</body>
+</html>
