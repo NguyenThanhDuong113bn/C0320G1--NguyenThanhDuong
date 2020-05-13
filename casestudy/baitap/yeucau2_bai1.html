@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeucau2</title>
+</head>
+<body>
+
+<script>
+    let ten="Dương";
+    let soCmnd="123456";
+    let ngay ="05";
+    let diacChi="295 Nguyễn Tất Thành";
+    let loai="Gold";
+    let soLuong="1";
+    let soNgayThue="2";
+    let loaiDichVu= "villa";
+    let gia= "$500";
+    let loaiPhongThue= "vip";
+    let thanhtoan;
+
+    let chon= parseInt(prompt("1.Hiển  thi thông tin khách hàng."+ "\n" + "2.Chỉnh sửa thông tin khách hàng."+"\n"+
+    "3.Hiển thị giá sau khi được giảm giá."));
+    switch (chon) {
+        case 1: {
+            alert("Ten:" + ten + "\n" + "Socmnd:" + soCmnd + "\n" + "Ngay:" + ngay + "\n" + "Dia chi:" + diacChi + "\n" +
+                "Loai:" + loai + "\n" + "So luong:" + soLuong + "\n" + "So ngay thue:" + soNgayThue + "\n" + "Loai dich vu:" + loaiDichVu + "\n" +
+                "Loai gia:" + gia + "\n" + "Loai phong thu:" + loaiPhongThue);
+            break;
+        }
+        case 2: {
+            let a = prompt("1.Ten:" + ten + "\n" + "2.Socmnd:" + soCmnd + "\n" + "3.Ngay:" + ngay + "\n" + "4.Dia chi:" + diacChi + "\n" +
+                "5.Loai:" + loai + "\n" + "6.So luong:" + soLuong + "\n" + "7.So ngay thue:" + soNgayThue + "\n" + "8.Loai dich vu:" + loaiDichVu + "\n" +
+                "9.Loai gia:" + gia + "\n" + "10.Loai phong thu:" + loaiPhongThue);
+            a= parseInt(a);
+            switch (a){
+                case 1:
+                    ten = prompt("Enter name:");
+                    break;
+
+                case 2:
+                    soCmnd = prompt(" Chinh sua:");
+                    break;
+                case 3:
+                    ngay= prompt(" Chinh sua:");
+                    break;
+                 case 4   :
+                     diacChi=prompt(" Chinh sua");
+                     break;
+                 case 5:
+                     loai=prompt("Chinh sua");
+                     break;
+                case 6:
+                    soLuong=prompt("Chinh sua");
+                    break;
+                 case 7:
+                     soNgayThue=prompt("chinhsua");
+                     break;
+                 case  8:
+                     loaiDichVu=prompt("chinh sua");
+                     break;
+                case 9:
+                    loaiPhongThue=prompt("chinh sua");
+            }
+
+            }
+    }
+
+</script>
+</body>
+</html>

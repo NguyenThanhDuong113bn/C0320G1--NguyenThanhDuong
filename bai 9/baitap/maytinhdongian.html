@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4"> <input id="Show:" type="text"> </td>
+        </tr>
+        <tr>
+            <td> <button id="1" onclick="Nhap1()" ;> 1</button> </td>
+            <td> <button id="2" onclick="Nhap2()" ;> 2 </button> </td>
+            <td> <button id="3" onclick="Nhap3()" ;> 3 </button></td>
+            <td> <button id="cong" onclick="Phepcong()" ;> +  </button></td>
+    </tr>
+        <tr>
+            <td> <button id="4" onclick="Nhap4()";> 4 </button></td>
+            <td> <button id="5" onclick="Nhap4()";> 5 </button></td>
+            <td> <button id="6" onclick="Nhap5()";> 6 </button></td>
+            <td> <button id="tru" onclick="Pheptru()";> - </button></td>
+        </tr>
+        <tr>
+            <td> <button id="7" onclick="Nhap7()";> 7 </button></td>
+            <td> <button id="8" onclick="Nhap8()";> 8 </button></td>
+            <td> <button id="9" onclick="Nhap9()";> 9 </button></td>
+            <td> <button id="nhan" onclick="Phepnhan()";> x </button></td>
+        </tr>
+        <tr>
+            <td> <button id="Xoa" onclick="Xoa ()";> C </button> </td>
+            <td> <button id="0" onclick="Nhap0 ()";> 0 </button></td>
+            <td> <button id="Tinh" onclick="Tinh()";> = </button></td>
+            <td> <button id="chia" onclick="Phepchia()";> / </button></td>
+        </tr>
+  </table>
+
+    <script>
+        function Nhap1() {
+            document.getElementById("Show").innerHTML +=1;
+        }
+        function Nhap2() {
+            document.getElementById("Show").innerHTML +=2;
+        }
+        function Nhap3() {
+            document.getElementById("Show").innerHTML +=3;
+        }
+        function Nhap4() {
+            document.getElementById("Show").innerHTML +=4;
+        }
+        function Nhap5() {
+            document.getElementById("Show").innerHTML +=6;
+        }
+        function Nhap6() {
+            document.getElementById("Show").innerHTML +=7;
+        }
+        function Nhap7() {
+            document.getElementById("Show").innerHTML += 8;
+        }
+        function Nhap8() {
+            document.getElementById("Show").innerHTML +=9;
+        }
+        function Nhap9() {
+            document.getElementById("Show").innerHTML +=9;
+        }
+        function Nhap0() {
+            document.getElementById("Show").innerHTML +=0;
+        }
+
+
+        function Phepcong() {
+            document.getElementById("Show").innerHTML +="+";
+        }
+        function Pheptru() {
+            document.getElementById("Show").innerHTML +="-";
+        }
+        function Phepnhan() {
+            document.getElementById("Show").innerHTML +="x";
+        }
+        function Phepchia() {
+            document.getElementById("Show").innerHTML +="/";
+        }
+
+        function Tinh() {
+            let result=(document.getElementById("Show").textContent)
+            let a = parseInt(eval(result));
+            document.getElementById("show").innerHTML =a;
+        }
+    function Xoa() {
+        document.getElementById("show").innerHTML = "";
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="div 1" style="border-style: solid;border-color: blue;"></p>
+<img id="img0" onclick="changheImg('0')"  src="monkey0.jpg"/></p>
+
+<br/>
+        <img id="img1" onclick="changheImg('1')"  src="cat1.jpg"/>
+<br/>
+        <img id="img2" onclick="changheImg('2')"  src="cat2.jpg"/>
+<br/>
+        <img id="img3" onclick="changheImg('3')"  src="cat3.jpg"/>
+<br/>
+        <img id="img4" onclick="changheImg('4')"  src="cat4.jpg"/>
+<script>
+    function changeImg(indexImg) {
+        let img1=document.getElementById("img1");
+        let img2=document.getElementById("img2");
+        let img3=document.getElementById("img3");
+        let img4=document.getElementById("img4");
+        let img0=document.getElementById("img0");
+
+        switch (indexImg) {
+            case "0":
+                alert(img0.src)
+         if(img0.getAttribute("src")=="images/cat0.jpg"){
+             img0.scr="images/monkey0.jpg";
+         }
+            else if (img0.getAttribute("src")=="images/monkey0.jpg"){
+             img0.scr="images/panda0.jpg";
+         }
+            else {
+             img0.scr="images/cat0.jpg";
+         }
+            break;
+
+            case "1":
+                alert(img0.src)
+                if(img1.getAttribute("src")=="images/cat1.jpg"){
+                    img1.scr="images/monkey1.jpg";
+                }
+                else if (img1.getAttribute("src")=="images/monkey1.jpg"){
+                    img1.scr="images/panda1.jpg";
+                }
+                else {
+                    img1.scr="images/cat1.jpg";
+                }
+                break;
+
+            case "2":
+                alert(img2.src)
+                if(img2.getAttribute("src")=="images/cat2.jpg"){
+                    img2.scr="images/monkey0.jpg";
+                }
+                else if (img2.getAttribute("src")=="images/monkey2.jpg"){
+                    img2.scr="images/panda2.jpg";
+                }
+                else {
+                    img2.scr="images/cat2.jpg";
+                }
+                break;
+            case "3":
+                alert(img3.src)
+                if(img3.getAttribute("src")=="images/cat3.jpg"){
+                    img3.scr="images/monkey0.jpg";
+                }
+                else if (img3.getAttribute("src")=="images/monkey3.jpg"){
+                    img3.scr="images/panda3.jpg";
+                }
+                else {
+                    img3.scr="images/cat3.jpg";
+                }
+                break;
+            case "4":
+                alert(img4.src)
+                if(img4.getAttribute("src")=="images/cat4.jpg"){
+                    img4.scr="images/monkey0.jpg";
+                }
+                else if (img4.getAttribute("src")=="images/monkey4.jpg"){
+                    img4.scr="images/panda4.jpg";
+                }
+                else {
+                    img4.scr="images/cat4.jpg";
+                }
+                break;
+        }
+            if(img0.getAttribute("src")==="images/cat0.jbg"&&img1.getAttribute("src")==="images/cat1.jbg"
+                &&img2.getAttribute("src")==="images/cat2.jbg"){
+                    document.getElementById("div1").style.borderColor="red"
+                    document.getElementById("div1").style.borderStyle="solid"
+            }
+            else if(img0.getAttribute("src")==="images/monkey0.jbg"&& img1.getAttribute("src")==="images/monkey1.jbg"
+                &&img2.getAttribute("src")==="images/monkey2.jbg"){
+                document.getElementById("div1").style.borderColor="blue"
+                document.getElementById("div1").style.borderStyle="solid"
+            }
+
+    }
+</script>
+
+
+</body>
+</html>
