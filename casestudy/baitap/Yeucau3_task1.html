@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ten=  prompt('Username');
+    let soCmnd= prompt('Identity card number');
+    let ngay =prompt('Day');
+    let diacChi=prompt('Address');
+    let loai=prompt('Species Customer');
+    let gia=prompt('Sale');
+    let soLuong=prompt('quantity included');
+    let soNgayThue=prompt('recent');
+    let loaiDichVu=prompt("type of service");
+    let loaiPhongThue=prompt('room type rented ');
+    let giaDichVu=0;
+    let tongTien=0;
+
+
+
+    if ( loaiDichVu == "villa"){
+        switch (loai) {
+            case "Diamond":
+                tongTien=500*soNgayThue*(1-giamgia/100)-20;
+                break;
+            case "Platinum":
+                tongTien=500*soNgayThue*(1-giamgia/100)-15;
+                break;
+            case "Gold":
+                tongTien=500*soNgayThue*(1-giamgia/100)-10;
+                break;
+            case "Sliver":
+                tongTien=500*soNgayThue*(1-giamgia/100)-5;
+                break;
+            case  "Member":
+                tongTien=500*soNgayThue*(1-giamgia/100);
+        }
+    }
+    else if(loaiDichVu =="House"){
+        switch (loai) {
+            case "Diamond":
+                tongTien=300*soNgayThue*(1-giamgia/100)-20;
+                break;
+            case "Platinum":
+                tongTien=300*soNgayThue*(1-giamgia/100)-15;
+                break;
+            case "Gold":
+                tongTien=300*soNgayThue*(1-giamgia/100)-10;
+                break;
+            case "Sliver":
+                tongTien=300*soNgayThue*(1-giamgia/100)-5;
+                break;
+            case  "Member":
+                tongTien=300*soNgayThue*(1-giamgia/100);
+        }
+    }
+    else if (loaiDichVu =="Room"){
+        switch (loai) {
+            case "Diamond":
+                tongTien=100*soNgayThue*(1-giamgia/100)-20;
+                break;
+            case "Platinum":
+                tongTien=100*soNgayThue*(1-giamgia/100)-15;
+                break;
+            case "Gold":
+                tongTien=100*soNgayThue*(1-giamgia/100)-10;
+                break;
+            case "Sliver":
+                tongTien=100*soNgayThue*(1-giamgia/100)-5;
+                break;
+            case  "Member":
+                tongTien=100*soNgayThue*(1-giamgia/100);
+        }
+
+    }
+    if (soNgayThue>7 ) {
+        tongTien = tongTien - 30;
+        if (soNgayThue >= 5)
+            tongTien = tongTien - 20;
+    } else tongTien=tongTien-10;
+
+    if(diacChi=="Đà Nẵng"){
+
+        let currentYear = new Date().getFullYear();
+        let birthday1 = new Date(birthday).getFullYear();
+        let ageCustomer = currentYear - birthday1;
+        if(ageCustomer>30)
+            tongTien=tongTien-2;
+        if(ageCustomer<=30 && ageCustomer>=20)
+            tongTien=tongTien-1;
+
+        tongTien=tongTien-20;
+    } else if(diacChi=="Huế"){
+        tongTien=tongTien-10
+    } else tongTien=tongTien-5;
+
+    alert("Tổng tiền là: "+tongTien)
+
+
+
+</script>
+</body>
+</html>

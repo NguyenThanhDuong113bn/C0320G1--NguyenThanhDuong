@@ -11,21 +11,22 @@
 <tr>
     <td> <button id="1" onclick="Choi()";> Choi </button> </td>
 </tr>
-    <td> <button id="2" onclick="Choi()";> Choi lai</button> </td>
+
 <script>
     let a=parseInt(prompt('Nhap vao doan muon doan tu :'));
     let b=parseInt(prompt('Nhap vao doan muon den :'));
-    let c=Math.round(Math.random()*b-(b+a));
+    let c=Math.round(Math.random()*(b-a)+a);
     let d;
     let count=0;
-    while (d!=c && count!=3);
+    while (d!=c && count!=3){
         d=parseInt(prompt("Nhap so doan:"));
         if (d==c){
-           alert(" chuan") ;
+           alert(" GODD") ;
 
         }
-        else ()
-
+        else count++;
+    }
+        alert('Dap an la:'+c)
 
 
 

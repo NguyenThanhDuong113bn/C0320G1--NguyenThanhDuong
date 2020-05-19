@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2 id="result"></h2>
+    <script>
+
+       // let array= new Array();
+       //  let str= " ";
+       //  let num=0;
+       //  let result= document.getElementById(" result");
+       //
+       //  for(let i=0;i<10;i++){
+       //      array[i]=Math.round(Math.random()*20);
+       //
+       //      str += array[i]+ " ,";
+       //
+       //      if (array[i]>=10) {num ++;}
+       //  }
+       //  str += " <br>" +"So luong phan tu lon hon 10 la:"+num+"phan tu";
+       // document.getElementById( 'result') .innerHTML= str;
+
+         let a= new Array(10);
+        let count= 0;
+        let b= new Array;
+         while (count<10){
+             let b= parseInt(prompt("Nhap pha tu vao mang : "));
+             a[count]=b;
+             count ++;
+         }
+         let j=0;
+         for (let i=0; i<a.length;i++){
+
+             if (a[i]>=10){
+
+                 b[j]=a[i];
+
+                 j++;
+             }
+         }
+         document.write(" Cac so nguyen lon hon 10 trong mang la:"+ "<br>" );
+             for (let i=0; i<b.length; i++){
+
+                 document.write(b[i] + "   ");
+         }
+    </script>
+
+</body>
+</html>

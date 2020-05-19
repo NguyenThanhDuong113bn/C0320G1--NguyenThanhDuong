@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">''
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="Nhap"> <br>
+    <br/>
+    <button id="Tim" onclick="Search()">search</button>
+<p id="result"></p>
+
+    <script>
+        let english=[ 'hello','book','read'];
+        let viet=['chao','sach','doc'];
+
+        let b;
+        function Search() {
+            let a=document.getElementById('Nhap').value;
+                for (i=0; i<english.length;i++) {
+                    if (a==english[i]) {
+                        b = viet[i];
+                        break;
+                    } else b = 'Khong tim thay';
+                }
+                document.getElementById("result").innerHTML=b;
+
+        }
+    </script>
+</body>
+</html>

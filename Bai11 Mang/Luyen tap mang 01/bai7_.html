@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a= new Array(10);
+        let firt= new  Array();
+        let count =0;
+        let d=0
+
+        while(count<10){
+            let b= parseInt(prompt("Nhap vao phan tu cua mang:"));
+            a[count]=b;
+            firt[count]=b;
+            count ++;
+        }
+            let c=parseInt(prompt("Nhap vao so can tim :"));
+            for (let i=0;i<a.length;i++){
+                if (a[i]== c){
+                    d++;
+                    for (let j=i;j<a.length;j++){
+                        a[j]=a[i+1];
+                    }
+                    a
+                }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let up='ABCDEGHIKLMN0PQRSTUV';
+        let low='abcdeghiklmnopqrstuv';
+        let a=prompt(' Nhap 1 chuoi:');
+        let result=[];
+
+        for (let x=0;x<a.length;x++){
+            let b;
+            for (let i=0;i<up.length;i++){
+                if( a[x]==up[i]){
+                    b=a[x].toLowerCase();
+                    result.push(b);
+                }
+                else if(a[x]===low[i]){
+                    b =  a[x].toUpperCase()
+                    result.push(b);
+                }
+            }
+
+        }
+        document.write(result.join(''))
+
+
+
+    </script>
+
+</body>
+</html>
